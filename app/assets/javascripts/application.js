@@ -12,4 +12,12 @@
 //
 //= require rails-ujs
 //= require turbolinks
+
+// Gems
+//= require bootstrap
+//= require jqBootstrapValidation
+//= require jquery
+//= require jquery.easing
+
+// Custom
 //= require_tree .
