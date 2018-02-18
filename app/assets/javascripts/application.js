@@ -14,10 +14,10 @@
 //= require turbolinks
 
 // Gems
-//= require bootstrap
-//= require jqBootstrapValidation
 //= require jquery
 //= require jquery.easing
+//= require bootstrap
+//= require jqBootstrapValidation
 
 // Custom
 //= require_tree .

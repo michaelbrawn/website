@@ -36,8 +36,8 @@ gem 'jbuilder', '~> 2.5'
 
 # JS Libraries
 source 'https://rails-assets.org' do
-  gem 'rails-assets-bootstrap', '4.0.0.beta.3'
-  gem 'rails-assets-fontawesome', '~> 4.7'
+  gem 'rails-assets-bootstrap', '4.0.0'
+  gem 'rails-assets-font-awesome', '~> 4.7'
   gem 'rails-assets-jquery', '~> 3'
   gem 'rails-assets-jquery.easing', '~> 1'
   gem 'rails-assets-jqBootstrapValidation'
