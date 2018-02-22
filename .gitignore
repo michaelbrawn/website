@@ -44,3 +44,6 @@ bower.json
 .byebug_history
 
 *.pem
+
+# Ignore encrypted secrets key file.
+config/secrets.yml.key

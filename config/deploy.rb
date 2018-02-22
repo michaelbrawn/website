@@ -6,6 +6,7 @@ lock '~> 3.10.1'
 set :application, 'michaelbrawn'
 set :repo_url, 'git@github.com:michaelbrawn/website.git'
 set :user, 'rails'
+
 set :puma_threads, [4, 16]
 set :puma_workers, 0
 
