@@ -22,6 +22,6 @@ test:
   <<: *default
   database: michaelbrawn_test
 
-# production:
-#   <<: *default
-#   database: michaelbrawn_production
+production:
+  <<: *default
+  database: michaelbrawn_production
