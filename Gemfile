@@ -37,11 +37,12 @@ gem 'jbuilder', '~> 2.5'
 # JS Libraries
 source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap', '4.0.0'
-  gem 'rails-assets-font-awesome', '~> 4.7'
   gem 'rails-assets-jquery', '~> 3'
   gem 'rails-assets-jquery.easing', '~> 1'
   gem 'rails-assets-jqBootstrapValidation'
 end
+# TODO: Change to rails-assets
+gem 'font-awesome-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
