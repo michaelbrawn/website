@@ -42,7 +42,8 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-jqBootstrapValidation'
 end
 # TODO: Change to rails-assets
-gem 'font-awesome-rails'
+gem 'font-awesome-sass', '~> 5.0.6'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -55,6 +56,7 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'better_errors', '~> 2'
+  gem 'binding_of_caller'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'

@@ -49,6 +49,8 @@ GEM
       erubi (>= 1.0.0)
       rack (>= 0.9.0)
     bindex (0.5.0)
+    binding_of_caller (0.7.3)
+      debug_inspector (>= 0.0.1)
     builder (3.2.3)
     byebug (10.0.0)
     capistrano (3.10.1)
@@ -88,11 +90,12 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     crass (1.0.3)
+    debug_inspector (0.0.3)
     erubi (1.7.0)
     execjs (2.7.0)
     ffi (1.9.21)
-    font-awesome-rails (4.7.0.3)
-      railties (>= 3.2, < 5.2)
+    font-awesome-sass (5.0.6.2)
+      sass (>= 3.2)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (0.9.5)
@@ -216,6 +219,7 @@ PLATFORMS
 
 DEPENDENCIES
   better_errors (~> 2)
+  binding_of_caller
   byebug
   capistrano
   capistrano-bundler
@@ -224,7 +228,7 @@ DEPENDENCIES
   capistrano3-puma
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
-  font-awesome-rails
+  font-awesome-sass (~> 5.0.6)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   mysql2

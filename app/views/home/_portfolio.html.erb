@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">Portfolio</h2>
+        <h2 class="section-heading text-uppercase">Experience</h2>
         <h3 class="section-subheading text-muted">Here's what I've done.</h3>
       </div>
     </div>
@@ -19,11 +19,82 @@
         </a>
         <div class="portfolio-caption">
           <%= link_to 'https://github.com/michaelbrawn', target: :_blank do %>
-            <h4>GitHub</h4>
+            <h4><%= icon('fab', 'github') %> GitHub</h4>
             <p class="text-muted">@MichaelBrawn</p>
           <% end %>
         </div>
       </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <!-- <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1"> -->
+          <!-- <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div> -->
+          <%= image_tag('home/portfolio/02.jpg', class: 'img-fluid', alt: '') %>
+        <!-- </a> -->
+        <div class="portfolio-caption">
+          <h4><%= icon('far', 'gem') %> Ruby on Rails</h4>
+          <p class="text-muted"><%= distance_of_time_in_words(Time.parse('01-02-2014'), Time.current).titleize %></p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <!-- <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1"> -->
+          <!-- <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div> -->
+          <%= image_tag('home/portfolio/03.jpg', class: 'img-fluid', alt: '') %>
+        <!-- </a> -->
+        <div class="portfolio-caption">
+          <h4><%= icon('fa', 'database') %> MySql</h4>
+          <p class="text-muted"><%= distance_of_time_in_words(Time.parse('01-02-2014'), Time.current).titleize %></p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <!-- <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1"> -->
+          <!-- <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div> -->
+          <%= image_tag('home/portfolio/04.jpg', class: 'img-fluid', alt: '') %>
+        <!-- </a> -->
+        <div class="portfolio-caption">
+          <h4><%= icon('fab', 'js') %> JQuery, CoffeeScript</h4>
+          <p class="text-muted"><%= distance_of_time_in_words(Time.parse('01-02-2014'), Time.current).titleize %></p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <!-- <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1"> -->
+          <!-- <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div> -->
+          <%= image_tag('home/portfolio/06.jpg', class: 'img-fluid', alt: '') %>
+        <!-- </a> -->
+        <div class="portfolio-caption">
+          <h4><%= icon('fab', 'aws') %> Amazon (AWS)</h4>
+          <p class="text-muted"><%= distance_of_time_in_words(Time.parse('01-01-2017'), Time.current).titleize %></p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <!-- <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1"> -->
+          <!-- <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-plus fa-3x"></i>
+            </div>
+          </div> -->
+          <%= image_tag('home/portfolio/05.jpg', class: 'img-fluid', alt: '') %>
+        <!-- </a> -->
+        <div class="portfolio-caption">
+          <h4><%= icon('fab', 'vuejs') %> Vue.js</h4>
+          <p class="text-muted"><%= distance_of_time_in_words(Time.parse('15-02-2018'), Time.current).titleize %></p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
