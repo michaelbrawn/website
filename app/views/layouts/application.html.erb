@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
+    <% set_meta_tags(
+      title: 'Michael Brawn\'s Website',
+      description: 'I\'m a Ruby on Rails developer from London, Ontario. This is my website about my Software Development experience.',
+      keywords: %w[Michael Brawn Software Developer Development Ruby Rails Web Scrum Master Agile].join(','),
+      author: 'Michael Brawn',
+      image_src: image_url('home/header-bg.jpg'),
+      og: {
+        type: 'website',
+        url: request.original_url || 'http://micahelbrawn.ca',
+        image: image_url('home/header-bg.jpg'),
+        title: :title,
+        description: :description,
+        site_name: :site,
+      }
+    )
+    %>
     <%= csrf_meta_tags %>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Rails 5.1 Bootstrap 4 Site">
-    <meta name="author" content="Michael Brawn">
+    <%= display_meta_tags %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
+    <%= render 'google_analytics' if Rails.application.secrets.google_analytics %>
     <title>MichaelBrawn</title>
 
     <!-- Custom fonts for this template -->
