@@ -25,7 +25,7 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= render 'google_analytics' if Rails.application.secrets.google_analytics %>
+    <%= render 'layouts/google_analytics' if Rails.application.secrets.google_analytics %>
     <title>MichaelBrawn</title>
 
     <!-- Custom fonts for this template -->
