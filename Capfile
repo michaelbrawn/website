@@ -30,6 +30,7 @@ require 'capistrano/rails'
 
 # require 'capistrano/rvm'
 require 'capistrano/rbenv'
+require 'capistrano/rbenv_install'
 # require 'capistrano/chruby'
 require 'capistrano/bundler'
 
