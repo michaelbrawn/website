@@ -24,7 +24,7 @@ set :ssh_options,     forward_agent: true, user: fetch(:user), keys: %w[~/.ssh/i
 set :puma_preload_app, true
 set :puma_worker_timeout, nil
 set :puma_init_active_record, true # Change to false when not using ActiveRecord
-set :assets_roles, [:web, :app]
+set :assets_roles, %i[web app]
 
 ## Defaults:
 # set :scm,           :git
@@ -104,7 +104,7 @@ end
 # set :pty, true
 
 # Default value for :linked_files is []
-append :linked_files, "config/secrets.yml.key"
+append :linked_files, 'config/secrets.yml.key'
 
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
