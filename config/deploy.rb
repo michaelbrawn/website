@@ -6,6 +6,8 @@ lock '~> 3.10.1'
 set :application, 'michaelbrawn'
 set :repo_url, 'git@github.com:michaelbrawn/website.git'
 set :user, 'rails'
+set :rbenv_ruby, File.read('.ruby-version').strip
+set :branch, ENV.fetch('BRANCH', 'master')
 
 set :puma_threads, [4, 16]
 set :puma_workers, 0
@@ -53,7 +55,7 @@ namespace :deploy do
   desc 'Make sure local git is in sync with remote.'
   task :check_revision do
     on roles(:app) do
-      unless `git rev-parse HEAD` == `git rev-parse origin/master`
+      unless `git rev-parse HEAD` == `git rev-parse origin/#{fetch(:branch)}`
         puts 'WARNING: HEAD is not the same as origin/master'
         puts 'Run `git push` to sync changes.'
         exit
