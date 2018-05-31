@@ -7,6 +7,7 @@ set :application, 'michaelbrawn'
 set :repo_url, 'git@github.com:michaelbrawn/website.git'
 set :user, 'rails'
 set :rbenv_ruby, File.read('.ruby-version').strip
+set :branch, ENV.fetch('BRANCH', 'master')
 
 set :puma_threads, [4, 16]
 set :puma_workers, 0
