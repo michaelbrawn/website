@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # config valid for current version and patch releases of Capistrano
-lock '~> 3.10.1'
+lock '~> 3.11.0'
 
 set :application, 'michaelbrawn'
 set :repo_url, 'git@github.com:michaelbrawn/website.git'
@@ -106,6 +106,7 @@ end
 # set :pty, true
 
 # Default value for :linked_files is []
+append :linked_files, 'config/secrets.yml.key'
 append :linked_files, 'config/secrets.yml.key'
 
 # Default value for linked_dirs is []
