@@ -9,6 +9,7 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails'
+gem 'bootsnap'
 # Use sqlite3 as the database for Active Record
 gem 'mysql2'
 # Use Puma as the app server
